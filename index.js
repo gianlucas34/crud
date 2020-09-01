@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 mongoose.connect(
-    "mongodb://localhost:27017/crud",
+    "mongodb+srv://deploy:gianlucas88@cluster0.qyhgi.mongodb.net/<dbname>?retryWrites=true&w=majority",
     { useUnifiedTopology: true }
 );
 require('./src/models/Costumer')
